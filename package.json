@@ -1,0 +1,20 @@
+{
+  "name": "detectar",
+  "version": "0.1.0",
+  "description": "Feature detects different sensor APIs and applies a HTML class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuno-Ki/detectar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ryuno-Ki/detectar/issues"
+  },
+  "homepage": "https://github.com/Ryuno-Ki/detectar#readme"
+}
