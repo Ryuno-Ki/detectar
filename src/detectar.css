@@ -17,7 +17,10 @@
 .aspect-ratio-16-to-9,
 
 .color,
-.no-color {
+.no-color,
+
+.orientation-landscape,
+.orientation-portrait {
   display: none;
 }
 
@@ -123,6 +126,20 @@
 @media (monochrome) {
   /* Device is monochrome, like e-book reader */
   .no-color {
+    display: initial;
+  }
+}
+
+@media (orientation: landscape) {
+  /* Device is more wide than height */
+  .orientation-landscape {
+    display: initial;
+  }
+}
+
+@media (orientation: portrait) {
+  /* Device is more height than wide */
+  .orientation-portrait {
     display: initial;
   }
 }
