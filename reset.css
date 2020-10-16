@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* + * {
+  margin-bottom: 1em;
+  margin-block-end: 1em;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}

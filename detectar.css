@@ -1,0 +1,145 @@
+.hover,
+.no-hover,
+
+.coarse-pointer,
+.fine-pointer,
+.no-pointer,
+
+.any-coarse-pointer,
+.any-fine-pointer,
+.any-no-pointer,
+
+.min-aspect-ratio-4-to-3,
+.min-aspect-ratio-16-to-9,
+.max-aspect-ratio-4-to-3,
+.max-aspect-ratio-16-to-9,
+.aspect-ratio-4-to-3,
+.aspect-ratio-16-to-9,
+
+.color,
+.no-color,
+
+.orientation-landscape,
+.orientation-portrait {
+  display: none;
+}
+
+@media (hover: hover) {
+  /* :hover can be used! */
+  .hover {
+    display: initial;
+  }
+}
+
+@media (hover: none) {
+  /* :hover cannot be used */
+  .no-hover {
+    display: initial;
+  }
+}
+
+@media (pointer: coarse) {
+  /* Primary pointer device such as a finger */
+  .coarse-pointer {
+    display: initial;
+  }
+}
+
+@media (pointer: fine) {
+  /* Primary pointer device such as a mouse */
+  .fine-pointer {
+    display: initial;
+  }
+}
+
+@media (pointer: none) {
+  /* No pointer input, i.e. only keyboard? */
+  .no-pointer {
+    display: initial;
+  }
+}
+
+@media (any-pointer: coarse) {
+  /* Any pointer device such as a touchpad */
+  .any-coarse-pointer {
+    display: initial;
+  }
+}
+
+@media (any-pointer: fine) {
+  /* Any pointer device such as a touchpen */
+  .any-fine-pointer {
+    display: initial;
+  }
+}
+
+@media (any-pointer: none) {
+  /* No device with a pointer */
+  .any-no-pointer {
+    display: initial;
+  }
+}
+
+@media (min-aspect-ratio: 4/3) {
+  .min-aspect-ratio-4-to-3 {
+    display: initial;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .min-aspect-ratio-16-to-9 {
+    display: initial;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .max-aspect-ratio-4-to-3 {
+    display: initial;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .max-aspect-ratio-16-to-9 {
+    display: initial;
+  }
+}
+
+@media (aspect-ratio: 4/3) {
+  .aspect-ratio-4-to-3 {
+    display: initial;
+  }
+}
+
+@media (aspect-ratio: 16/9) {
+  .aspect-ratio-16-to-9 {
+    display: initial;
+  }
+}
+
+@media (color: 8) {
+  /* Device has at least eight colours */
+  .color {
+    display: initial;
+  }
+}
+
+@media (monochrome) {
+  /* Device is monochrome, like e-book reader */
+  .no-color {
+    display: initial;
+  }
+}
+
+@media (orientation: landscape) {
+  /* Device is more wide than height */
+  .orientation-landscape {
+    display: initial;
+  }
+}
+
+@media (orientation: portrait) {
+  /* Device is more height than wide */
+  .orientation-portrait {
+    display: initial;
+  }
+}

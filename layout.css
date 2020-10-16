@@ -1,0 +1,44 @@
+main section {
+  margin: 0.5em;
+}
+
+/* Start with a float-based fallback */
+header,
+main,
+footer {
+  display: block;
+}
+
+main section {
+  float: left;
+  min-width: 25%;
+}
+
+@supports (display: flex) {
+  /* Undo fallback */
+  main section {
+    float: none;
+    min-width: 0;
+  }
+
+  /* Applay progressively enhanced layout */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@supports (display: grid) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-auto-rows: 1fr;
+  }
+}

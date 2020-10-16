@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Device Capability Detection</title>
+  <meta name="viewport" content="width=device-width, intial-scale=1" />
+  <link href="./reset.css" rel="stylesheet" />
+  <link href="./layout.css" rel="stylesheet" />
+  <link href="./detectar.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Device Capability Detection</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Hover</h2>
+      <ul>
+        <li class="hover">Supports <code>:hover</code></li>
+        <li class="no-hover">Doesn't support <code>:hover</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pointer devices</h2>
+      <h3>Primary device</h3>
+      <ul>
+        <li class="coarse-pointer">Primary device is a coarse pointer</li>
+        <li class="fine-pointer">Primary device is a fine pointer</li>
+        <li class="no-pointer">Primary device is not a pointer</li>
+      </ul>
+
+      <h3>Any device</h3>
+      <ul>
+        <li class="any-coarse-pointer">Any device with coarse pointer</li>
+        <li class="any-fine-pointer">Any device with fine pointer</li>
+        <li class="any-no-pointer">No device with a pointer</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Aspect ratio</h2>
+      <h3>Minimum aspect ratio</h3>
+      <ul>
+        <li class="min-aspect-ratio-4-to-3">Minimum aspect ratio is <code>4:3</code></li>
+        <li class="min-aspect-ratio-16-to-9">Minimum aspect ratio is <code>16:9</code></li>
+      </ul>
+
+      <h3>Maximum aspect ratio</h3>
+      <ul>
+        <li class="max-aspect-ratio-4-to-3">Maximum aspect ratio is <code>4:3</code></li>
+        <li class="max-aspect-ratio-16-to-9">Maximum aspect ratio is <code>16:9</code></li>
+      </ul>
+
+      <h3>Exact aspect ratio</h3>
+      <ul>
+        <li class="aspect-ratio-4-to-3">Aspect ratio is <code>4:3</code></li>
+        <li class="aspect-ratio-16-to-9">Aspect ratio is <code>16:9</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Colours</h2>
+      <ul>
+        <li class="color">Device supports colours</li>
+        <li class="no-color">Device is monochrome</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Orientation</h2>
+      <ul>
+        <li class="orientation-landscape">Landscape</li>
+        <li class="orientation-portrait">Portrait</li>
+      </ul>
+    </section>
+
+    <section id="device-motion">
+      <h2>Device Motion</h2>
+      <p class="deprecated">This method is deprecated.</p>
+    </section>
+
+    <section id="device-orientation">
+      <h2>Device Orientation</h2>
+      <p class="deprecated">This method is deprecated.</p>
+    </section>
+
+    <section id="accelerometer">
+      <h2>Accelerometer</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="ambient-light">
+      <h2>Ambient Light</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="bluetooth">
+      <h2>Bluetooth</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="geolocation">
+      <h2>Geolocation</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="gyroscope">
+      <h2>Gyroscope</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="magnetometer">
+      <h2>Magnetometer</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+
+    <section id="nfc">
+      <h2>Near-Field Communication</h2>
+      <p class="remove-with-js">JavaScript could not be executed.</p>
+    </section>
+  </main>
+  <footer>
+    The source code is on <a href="https://github.com/Ryuno-Ki/detectar">
+    GitHub</a>.
+  </footer>
+  <script src="detectar.js"></script>
+</body>
