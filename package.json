@@ -4,6 +4,7 @@
   "description": "Feature detects different sensor APIs and applies a HTML class.",
   "main": "index.js",
   "scripts": {
+    "gh-pages": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Ryuno-Ki/detectar/issues"
   },
-  "homepage": "https://github.com/Ryuno-Ki/detectar#readme"
+  "homepage": "https://github.com/Ryuno-Ki/detectar#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
