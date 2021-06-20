@@ -16,29 +16,29 @@
     ].forEach(function (permission) {
       navigator.permissions
         .query({ name: permission })
-	.then(function (permissionStatus) {
-	  console.log('Permission result ' + permissionStatus.state);
+        .then(function (permissionStatus) {
+          console.log('Permission result ' + permissionStatus.state);
           document.querySelector('#' + permission + ' .remove-with-js').remove();
 
-	  switch (permissionStatus.state) {
-	    case 'prompt':
-	      showPromptForPermission(permission, permissionStatus);
-	      break;
-	    default:
-	      console.info('Missing implementation for state')
-	  }
-	})
-	.catch(function (error) {
-	  console.log('Permission error', permission, error);
+          switch (permissionStatus.state) {
+            case 'prompt':
+              showPromptForPermission(permission, permissionStatus);
+              break;
+            default:
+              console.info('Missing implementation for state')
+          }
+        })
+        .catch(function (error) {
+          console.log('Permission error', permission, error);
 
           document.querySelector('#' + permission + ' .remove-with-js').remove();
 
-	  var element = document.createElement('p');
-	  element.textContent = 'This capability is not exposed to the browser.';
-	  document
-	    .getElementById(permission)
-	    .appendChild(element);
-	});
+          var element = document.createElement('p');
+          element.textContent = 'This capability is not exposed to the browser.';
+          document
+            .getElementById(permission)
+            .appendChild(element);
+        });
       });
   }
 
