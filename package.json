@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Ryuno-Ki/detectar#readme",
   "devDependencies": {
-    "gh-pages": "^3.2.2"
+    "gh-pages": "3.2.2"
   }
 }
